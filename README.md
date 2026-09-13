@@ -25,7 +25,10 @@ Node 18+ is the only requirement. You can also open `dist/index.html` directly i
 | `contact.html` | Contact |
 | `request-demo.html` | Demo request form |
 
-**Keep old links working.** The previous site used extensionless URLs such as `/radture-core` and `/request-demo`. Turn on "clean URLs" / "pretty URLs" on your host, or add redirects from each old path to its `.html` file.
+**Keep old links working.** The previous site used extensionless URLs such as `/radture-core` and `/request-demo`.
+
+- **Vercel:** `vercel.json` already handles this. It sets the output folder to `dist`, turns on clean URLs, and redirects the old sign-up paths to the demo form and the Solo waitlist.
+- **Other hosts:** turn on "clean URLs" / "pretty URLs", or add redirects from each old path to its `.html` file.
 
 ## Editing
 
