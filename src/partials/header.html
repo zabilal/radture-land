@@ -1,0 +1,27 @@
+<header class="site-header" data-header>
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html" aria-label="Radture home">
+      {{> logo-mark}}
+      <span class="brand__text" aria-hidden="true"><span class="brand__name">Radture</span><span class="brand__by">by Ultradeck Labs</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul class="nav__list">
+        <li><a href="radture-core.html"{{nav:core}}>Radture Core</a></li>
+        <li><a href="radture-solo.html"{{nav:solo}}>Radture Solo</a></li>
+        <li><a href="radture-link.html"{{nav:link}}>RadtureLink</a></li>
+        <li><a href="security.html"{{nav:security}}>Security</a></li>
+        <li><a href="about.html"{{nav:about}}>About</a></li>
+        <li><a href="blog.html"{{nav:blog}}>Blog</a></li>
+        <li class="nav__mobile-only"><a href="contact.html"{{nav:contact}}>Contact</a></li>
+        <li class="nav__mobile-only nav__cta"><a class="btn btn--signal" href="request-demo.html">Request a demo {{> arrow}}</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <a class="link-quiet" href="contact.html"{{nav:contact}}>Contact</a>
+      <a class="btn btn--signal btn--sm" href="request-demo.html"{{nav:demo}}>Request a demo</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span><span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>

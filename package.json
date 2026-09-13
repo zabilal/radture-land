@@ -1,0 +1,10 @@
+{
+  "name": "radture-website",
+  "private": true,
+  "description": "Radture marketing website: static, zero-dependency build.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs && python3 -m http.server 4173 --directory dist"
+  }
+}

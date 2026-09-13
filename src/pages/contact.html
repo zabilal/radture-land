@@ -1,0 +1,65 @@
+<!--
+title: Contact | Radture
+description: Talk to the Radture team about your imaging workflow. Call +234 905 291 6101 or email info@radture.com.
+nav: contact
+-->
+<section class="page-hero page-hero--text" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="page-hero__copy">
+      <p class="eyebrow">Contact</p>
+      <h1 class="h1" id="contact-title">Let’s talk about your imaging workflow.</h1>
+      <p class="lead">Get in touch with our team to discuss your specific needs and how Radture can help streamline your radiology workflow.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--lightbox" aria-label="Contact details and message form">
+  <div class="wrap contact-grid">
+    <div>
+      <dl class="contact-list">
+        <div><dt>Phone</dt><dd><a href="tel:+2349052916101">+234 905 291 6101</a></dd></div>
+        <div><dt>General enquiries</dt><dd><a href="mailto:info@radture.com">info@radture.com</a></dd></div>
+        <div><dt>Customer support</dt><dd><a href="mailto:support@radture.com">support@radture.com</a></dd></div>
+        <div><dt>Social</dt><dd><a href="https://linkedin.com/company/myradture/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></dd></div>
+      </dl>
+      <p class="muted" style="margin-top: 28px">Want to see the platform? <a class="arrow-link" href="request-demo.html">Request a demo {{> arrow}}</a></p>
+    </div>
+
+    <div class="form-card">
+      <form class="form" data-form="contact">
+        <div class="form-card__head">
+          <h2 class="h3">Send us a message</h2>
+          <p>Tell us what you need and we’ll get back to you.</p>
+        </div>
+        <div class="form__row">
+          <div class="field"><label for="c-name">Full name</label><input class="input" id="c-name" name="fullName" autocomplete="name" required></div>
+          <div class="field"><label for="c-email">Email address</label><input class="input" id="c-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="form__row">
+          <div class="field"><label for="c-org">Organization <span class="opt">(optional)</span></label><input class="input" id="c-org" name="organization" autocomplete="organization"></div>
+          <div class="field">
+            <label for="c-topic">Topic</label>
+            <select class="input" id="c-topic" name="topic" required>
+              <option value="">Select a topic</option>
+              <option>Product demo</option>
+              <option>Partnership</option>
+              <option>Support</option>
+              <option>Something else</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="c-message">Message</label><textarea class="input" id="c-message" name="message" required></textarea></div>
+        <p class="form__status form__status--error" data-status role="alert" hidden></p>
+        <div class="form__foot">
+          <p class="form__fine">We’ll only use these details to reply to your message.</p>
+          <button class="btn btn--ink" type="submit">Send message {{> arrow}}</button>
+        </div>
+      </form>
+      <div class="success" data-success tabindex="-1" hidden>
+        <span class="success__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        <h3 class="h3">One last step</h3>
+        <p>Your email app should open with your message ready. Send the email and our team will reply.</p>
+      </div>
+    </div>
+  </div>
+</section>

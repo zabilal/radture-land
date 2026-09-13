@@ -1,0 +1,86 @@
+<!--
+title: Request a demo | Radture
+description: See Radture Core on your imaging workflow. Tell us about your facility and our team will arrange a walkthrough.
+nav: demo
+-->
+<section class="page-hero" aria-labelledby="demo-title">
+  <div class="wrap demo-grid">
+    <div class="page-hero__copy">
+      <p class="eyebrow">Request a demo</p>
+      <h1 class="h1" id="demo-title">See Radture Core on your imaging workflow.</h1>
+      <p class="lead">Tell us about your facility and our team will arrange a walkthrough of how Radture connects acquisition, reporting and delivery, alongside the PACS, RIS and EMR you already use.</p>
+      <ol class="next-steps">
+        <li><strong>Share a few details</strong><span>About your facility and your role.</span></li>
+        <li><strong>We schedule a time</strong><span>Our team contacts you to confirm a date that works.</span></li>
+        <li><strong>Live walkthrough</strong><span>See case routing, reporting and RadtureLink delivery in action.</span></li>
+      </ol>
+      <p class="muted">Independent radiologist? <a class="arrow-link" href="radture-solo.html#waitlist">Join the Radture Solo waitlist {{> arrow}}</a></p>
+    </div>
+
+    <div class="form-card">
+      <form class="form" data-form="demo">
+        <div class="form-card__head">
+          <h2 class="h3">Your facility</h2>
+          <p>All fields are required unless marked optional.</p>
+        </div>
+        <div class="form__row">
+          <div class="field"><label for="d-name">Full name</label><input class="input" id="d-name" name="fullName" autocomplete="name" required></div>
+          <div class="field"><label for="d-email">Work email</label><input class="input" id="d-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="form__row">
+          <div class="field"><label for="d-facility">Healthcare facility</label><input class="input" id="d-facility" name="facility" autocomplete="organization" required></div>
+          <div class="field">
+            <label for="d-type">Facility type</label>
+            <select class="input" id="d-type" name="facilityType" required>
+              <option value="">Select type</option>
+              <option>Hospital</option>
+              <option>Imaging Center</option>
+              <option>Clinic</option>
+              <option>Diagnostic Lab</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="field">
+            <label for="d-role">Your role</label>
+            <select class="input" id="d-role" name="jobTitle" required>
+              <option value="">Select role</option>
+              <option>Radiology Director</option>
+              <option>Hospital Admin</option>
+              <option>IT Admin</option>
+              <option>Radiologist</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="d-country">Country</label><select class="input" id="d-country" name="country" data-countries required></select></div>
+        </div>
+        <div class="form__row">
+          <div class="field"><label for="d-state">State / province</label><input class="input" id="d-state" name="state" autocomplete="address-level1" required></div>
+          <div class="field"><label for="d-date">Preferred demo date <span class="opt">(optional)</span></label><input class="input" id="d-date" name="demoDate" type="date"></div>
+        </div>
+        <input type="hidden" name="demoTime" value="">
+        <p class="form__status form__status--error" data-status role="alert" hidden></p>
+        <div class="form__foot">
+          <p class="form__fine">By submitting, you agree to be contacted by the Radture team about this request.</p>
+          <button class="btn btn--ink" type="submit">Request demo {{> arrow}}</button>
+        </div>
+      </form>
+      <div class="success" data-success tabindex="-1" hidden>
+        <span class="success__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        <h2 class="h3">Request received</h2>
+        <p>Thank you. Our team will be in touch shortly to schedule your walkthrough.</p>
+        <a class="arrow-link" href="index.html">Back to home {{> arrow}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="standards" aria-label="Standards Radture aligns with">
+  <div class="wrap standards__inner">
+    <p class="standards__label">Built with privacy and security by design, aligned with</p>
+    <ul class="standards__list">
+      <li>GDPR</li><li>HIPAA</li><li>NDPR</li><li>HL7</li><li>FHIR</li><li>ICD-11</li>
+    </ul>
+  </div>
+</section>
