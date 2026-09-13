@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/get-started/hospital-signup", "destination": "/request-demo", "permanent": true },
+    { "source": "/get-started/radiologist-signup", "destination": "/radture-solo#waitlist", "permanent": true },
+    { "source": "/radiologists/sign-up", "destination": "/radture-solo#waitlist", "permanent": true },
+    { "source": "/Hospitals", "destination": "/radture-core", "permanent": true },
+    { "source": "/Radiologists", "destination": "/radture-solo", "permanent": true }
+  ]
+}
